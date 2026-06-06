@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Menu, X, ArrowRight, Phone, Mail, Clock } from "lucide-react";
+import { Menu, X, ArrowRight, Mail, Clock } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -44,7 +45,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-[#84a98c] transition-colors"
               >
-                <Phone className="h-3.5 w-3.5" />
+                <FaWhatsapp className="h-3.5 w-3.5" />
                 <span>+62 8121-3696-772</span>
               </Link>
               <Link
