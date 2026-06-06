@@ -101,7 +101,7 @@ export function Navbar() {
                 className="bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full px-6 shadow-lg shadow-[#84a98c]/25 transition-all duration-300"
               >
                 <Link
-                  href="/Catalog-of-Product-Ilavioo-Nusantara-Sejahtera.pdf"
+                  href="/catalog.pdf"
                   target="_blank"
                   className="flex items-center gap-2"
                 >
@@ -146,7 +146,7 @@ export function Navbar() {
               className="mt-4 bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full"
             >
               <Link
-                href="/Catalog-of-Product-Ilavioo-Nusantara-Sejahtera.pdf"
+                href="/catalog.pdf"
                 target="_blank"
               >
                 Download Catalog
