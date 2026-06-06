@@ -100,14 +100,16 @@ export function Navbar() {
                 asChild
                 className="bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full px-6 shadow-lg shadow-[#84a98c]/25 transition-all duration-300"
               >
-                <Link
+                <a
                   href="/catalog.pdf"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2"
+                  download
                 >
                   Download Catalog
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </Button>
             </div>
 
@@ -141,17 +143,15 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button
-              asChild
-              className="mt-4 bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full"
+            <a
+              href="/catalog.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="mt-4 inline-flex items-center justify-center px-4 py-2 bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full text-sm font-medium transition-colors"
             >
-              <Link
-                href="/catalog.pdf"
-                target="_blank"
-              >
-                Download Catalog
-              </Link>
-            </Button>
+              Download Catalog
+            </a>
           </nav>
         </div>
       </header>
