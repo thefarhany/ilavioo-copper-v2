@@ -27,9 +27,9 @@ export function GalleryOverviewSection() {
   };
 
   return (
-    <section className="py-24 bg-[#f1f5f3] relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#84a98c]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#cad2c5]/20 rounded-full blur-3xl" />
+    <section className="py-24 bg-[#F5F0E8] relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#A0522D]/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#C5A059]/20 rounded-full blur-3xl" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
         <div className="text-center mb-16">
@@ -37,7 +37,7 @@ export function GalleryOverviewSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#84a98c] to-[#52796f] flex items-center justify-center shadow-lg shadow-[#84a98c]/25"
+            className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#A0522D] to-[#3E2723] flex items-center justify-center shadow-lg shadow-[#A0522D]/25"
           >
             <Camera className="w-8 h-8 text-white" />
           </motion.div>
@@ -46,7 +46,7 @@ export function GalleryOverviewSection() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-sm uppercase tracking-[0.2em] text-[#84a98c] mb-4 font-medium"
+            className="text-sm uppercase tracking-[0.2em] text-[#A0522D] mb-4 font-medium"
           >
             Gallery Preview
           </motion.p>
@@ -59,7 +59,7 @@ export function GalleryOverviewSection() {
             className="text-4xl md:text-5xl text-[#1c1917] mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            A Glimpse of Our <span className="text-[#52796f] italic">Craft</span>
+            A Glimpse of Our <span className="text-[#C5A059] italic">Craft</span>
           </motion.h2>
           
           <motion.p 
@@ -81,7 +81,7 @@ export function GalleryOverviewSection() {
           >
             <Link 
               href="/gallery" 
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full font-medium transition-colors shadow-lg shadow-[#84a98c]/25"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#A0522D] hover:bg-[#3E2723] text-white rounded-full font-medium transition-colors shadow-lg shadow-[#A0522D]/25"
             >
               View Full Gallery
               <ArrowRight className="h-4 w-4" />
@@ -117,12 +117,13 @@ export function GalleryOverviewSection() {
                       alt={item.title || "Gallery image"}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      sizes="(max-width: 768px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1c1917]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center transform scale-50 group-hover:scale-100 transition-transform duration-500">
-                        <ArrowRight className="h-5 w-5 text-[#52796f]" />
+                        <ArrowRight className="h-5 w-5 text-[#C5A059]" />
                       </div>
                     </div>
                   </div>

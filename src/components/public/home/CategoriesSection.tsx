@@ -20,11 +20,11 @@ export function CategoriesSection() {
       icon: <CookingPot className="w-10 h-10 text-white/80" />,
     },
     "copper-cat": {
-      gradient: "bg-linear-to-br from-[#52796f] to-[#354f52]",
+      gradient: "bg-linear-to-br from-[#3E2723] to-[#C5A059]",
       icon: <Home className="w-10 h-10 text-white/80" />,
     },
     "test-category": {
-      gradient: "bg-linear-to-br from-[#84a98c] to-[#52796f]",
+      gradient: "bg-linear-to-br from-[#A0522D] to-[#3E2723]",
       icon: <UtensilsCrossed className="w-10 h-10 text-white/80" />,
     },
     "test-add-category": {
@@ -35,14 +35,14 @@ export function CategoriesSection() {
 
   const getCategoryVisual = (slug: string) => {
     return categoryVisuals[slug.toLowerCase()] || {
-      gradient: "bg-linear-to-br from-[#84a98c] to-[#52796f]",
+      gradient: "bg-linear-to-br from-[#A0522D] to-[#3E2723]",
       icon: <CookingPot className="w-10 h-10 text-white/80" />,
     };
   };
 
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#f1f5f3] to-transparent" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#F5F0E8] to-transparent" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
@@ -51,14 +51,14 @@ export function CategoriesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#84a98c] text-sm uppercase tracking-[0.2em] font-medium mb-4 block">
+            <span className="text-[#A0522D] text-sm uppercase tracking-[0.2em] font-medium mb-4 block">
               Browse
             </span>
             <h2 
               className="text-4xl md:text-5xl text-[#1c1917]"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Product <span className="text-[#52796f] italic">Categories</span>
+              Product <span className="text-[#C5A059] italic">Categories</span>
             </h2>
           </motion.div>
           <motion.div
@@ -68,10 +68,10 @@ export function CategoriesSection() {
           >
             <Link 
               href="/products" 
-              className="group flex items-center gap-2 text-[#52796f] hover:text-[#84a98c] transition-colors font-medium"
+              className="group flex items-center gap-2 text-[#C5A059] hover:text-[#A0522D] transition-colors font-medium"
             >
               View All Categories
-              <span className="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:bg-[#84a98c] group-hover:border-[#84a98c] group-hover:text-white transition-all">
+              <span className="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:bg-[#A0522D] group-hover:border-[#A0522D] group-hover:text-white transition-all">
                 <ArrowRight className="h-4 w-4" />
               </span>
             </Link>
@@ -102,7 +102,7 @@ export function CategoriesSection() {
                   className={`group ${i === 1 ? 'lg:mt-12' : i === 2 ? 'lg:mt-6' : ''}`}
                 >
                   <Link href={`/products?category=${category.slug}`} className="block">
-                    <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 shadow-lg shadow-[#84a98c]/10 group">
+                    <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 shadow-lg shadow-[#A0522D]/10 group">
                       <div className={`absolute inset-0 ${visual.gradient} transition-transform duration-700 group-hover:scale-110`} />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 to-transparent" />
 

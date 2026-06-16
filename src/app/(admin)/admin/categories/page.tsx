@@ -142,7 +142,7 @@ export default function AdminCategoriesPage() {
         </div>
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
-            <Button className="bg-[#52796f] hover:bg-[#3d5c54]">
+            <Button className="bg-[#3E2723] hover:bg-[#2A1B14]">
               <Plus className="h-4 w-4 mr-2" />
               Add Category
             </Button>
@@ -172,7 +172,7 @@ export default function AdminCategoriesPage() {
                 <Button
                   type="submit"
                   disabled={isCreating}
-                  className="bg-[#52796f] hover:bg-[#3d5c54]"
+                  className="bg-[#3E2723] hover:bg-[#2A1B14]"
                 >
                   {isCreating ? "Creating..." : "Create"}
                 </Button>
@@ -270,7 +270,7 @@ export default function AdminCategoriesPage() {
               <Button
                 type="submit"
                 disabled={isUpdating}
-                className="bg-[#52796f] hover:bg-[#3d5c54]"
+                className="bg-[#3E2723] hover:bg-[#2A1B14]"
               >
                 {isUpdating ? "Updating..." : "Update"}
               </Button>

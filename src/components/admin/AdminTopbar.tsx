@@ -29,7 +29,7 @@ export function AdminTopbar() {
       </h1>
 
       <div className="flex items-center gap-3">
-        <Button variant="ghost" size="sm" className="h-8 text-xs text-[#6c757d] hover:text-[#52796f]" asChild>
+        <Button variant="ghost" size="sm" className="h-8 text-xs text-[#6c757d] hover:text-[#C5A059]" asChild>
           <Link href="/" target="_blank" className="flex items-center gap-1.5">
             <ExternalLink className="h-3.5 w-3.5" />
             View Website
@@ -38,7 +38,7 @@ export function AdminTopbar() {
 
         <div className="flex items-center gap-2 pl-3 border-l border-[#e9ecef]">
           <Avatar className="h-7 w-7">
-            <AvatarFallback className="bg-[#52796f]/10 text-[#52796f]">
+            <AvatarFallback className="bg-[#3E2723]/10 text-[#C5A059]">
               <User className="h-3.5 w-3.5" />
             </AvatarFallback>
           </Avatar>

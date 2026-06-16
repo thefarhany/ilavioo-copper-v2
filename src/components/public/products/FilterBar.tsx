@@ -41,18 +41,18 @@ export function FilterBar({
         <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
           {/* Search */}
           <div className="relative w-full sm:w-96">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-[#84a98c]" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-[#A0522D]" />
             <Input
               type="text"
               placeholder="Search products..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-11 pr-10 bg-[#f5f5f4] border-0 rounded-full focus-visible:ring-2 focus-visible:ring-[#84a98c]/20 py-3 text-sm"
+              className="pl-11 pr-10 bg-[#f5f5f4] border-0 rounded-full focus-visible:ring-2 focus-visible:ring-[#A0522D]/20 py-3 text-sm"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-[#78716c] hover:text-[#52796f] transition-colors"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-[#78716c] hover:text-[#C5A059] transition-colors"
               >
                 <X className="h-4 w-4" />
               </button>
@@ -67,8 +67,8 @@ export function FilterBar({
                 onClick={() => setViewMode("grid")}
                 className={`p-2 rounded-full transition-all ${
                   viewMode === "grid" 
-                    ? "bg-white shadow-sm text-[#52796f]" 
-                    : "text-[#78716c] hover:text-[#52796f]"
+                    ? "bg-white shadow-sm text-[#C5A059]" 
+                    : "text-[#78716c] hover:text-[#C5A059]"
                 }`}
                 title="Grid View"
               >
@@ -78,8 +78,8 @@ export function FilterBar({
                 onClick={() => setViewMode("masonry")}
                 className={`p-2 rounded-full transition-all ${
                   viewMode === "masonry" 
-                    ? "bg-white shadow-sm text-[#52796f]" 
-                    : "text-[#78716c] hover:text-[#52796f]"
+                    ? "bg-white shadow-sm text-[#C5A059]" 
+                    : "text-[#78716c] hover:text-[#C5A059]"
                 }`}
                 title="Masonry View"
               >
@@ -98,7 +98,7 @@ export function FilterBar({
                     ? categories.find((c) => c.slug === selectedCategory)?.name
                     : "All Categories"}
                 </span>
-                <ChevronDown className={`h-4 w-4 text-[#84a98c] transition-transform ${isFilterOpen ? "rotate-180" : ""}`} />
+                <ChevronDown className={`h-4 w-4 text-[#A0522D] transition-transform ${isFilterOpen ? "rotate-180" : ""}`} />
               </button>
 
               <AnimatePresence>
@@ -115,7 +115,7 @@ export function FilterBar({
                       initial={{ opacity: 0, y: -10, scale: 0.95 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                      className="absolute right-0 top-full mt-2 w-56 bg-white border border-[#e7e5e4] rounded-2xl shadow-xl shadow-[#84a98c]/10 z-20 overflow-hidden"
+                      className="absolute right-0 top-full mt-2 w-56 bg-white border border-[#e7e5e4] rounded-2xl shadow-xl shadow-[#A0522D]/10 z-20 overflow-hidden"
                     >
                       <div className="p-2">
                         <button
@@ -125,7 +125,7 @@ export function FilterBar({
                           }}
                           className={`w-full text-left px-4 py-3 text-sm rounded-xl transition-colors ${
                             !selectedCategory 
-                              ? "bg-[#84a98c]/10 text-[#52796f] font-medium" 
+                              ? "bg-[#A0522D]/10 text-[#C5A059] font-medium" 
                               : "text-[#1c1917] hover:bg-[#f5f5f4]"
                           }`}
                         >
@@ -141,7 +141,7 @@ export function FilterBar({
                             }}
                             className={`w-full text-left px-4 py-3 text-sm rounded-xl transition-colors ${
                               selectedCategory === category.slug 
-                                ? "bg-[#84a98c]/10 text-[#52796f] font-medium" 
+                                ? "bg-[#A0522D]/10 text-[#C5A059] font-medium" 
                                 : "text-[#1c1917] hover:bg-[#f5f5f4]"
                             }`}
                           >
@@ -168,7 +168,7 @@ export function FilterBar({
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   onClick={clearFilters}
-                  className="flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-[#52796f] hover:text-[#84a98c] bg-[#84a98c]/10 hover:bg-[#84a98c]/20 rounded-full transition-colors"
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-[#C5A059] hover:text-[#A0522D] bg-[#A0522D]/10 hover:bg-[#A0522D]/20 rounded-full transition-colors"
                 >
                   Clear filters
                   <X className="h-3 w-3" />

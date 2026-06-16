@@ -16,7 +16,7 @@ export function EmptyState({ searchQuery }: EmptyStateProps) {
       className="py-24 text-center"
     >
       <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-[#f5f5f4] border border-[#e7e5e4] flex items-center justify-center">
-        <Search className="h-8 w-8 text-[#84a98c]" />
+        <Search className="h-8 w-8 text-[#A0522D]" />
       </div>
       
       <h3 
@@ -36,14 +36,14 @@ export function EmptyState({ searchQuery }: EmptyStateProps) {
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link
           href="/products"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full font-medium transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-[#A0522D] hover:bg-[#3E2723] text-white rounded-full font-medium transition-colors"
         >
           Browse All Products
           <ArrowRight className="h-4 w-4" />
         </Link>
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 px-6 py-3 border border-[#84a98c] text-[#52796f] hover:bg-[#84a98c] hover:text-white rounded-full font-medium transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 border border-[#A0522D] text-[#C5A059] hover:bg-[#A0522D] hover:text-white rounded-full font-medium transition-colors"
         >
           Request Custom Item
         </Link>

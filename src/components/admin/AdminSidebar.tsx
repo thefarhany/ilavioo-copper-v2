@@ -34,7 +34,7 @@ export function AdminSidebar() {
       <div className="p-5 border-b border-[#e9ecef]">
         <Link href="/admin/dashboard">
           <span className="text-lg font-semibold text-[#212529]">
-            Ilavioo<span className="text-[#52796f]">Copper</span>
+            Ilavioo<span className="text-[#C5A059]">Copper</span>
           </span>
         </Link>
         <p className="text-[11px] text-[#6c757d] mt-0.5">Admin Panel</p>
@@ -51,7 +51,7 @@ export function AdminSidebar() {
               className={cn(
                 "w-full justify-start gap-3 h-10 px-3 text-sm font-medium rounded-lg transition-colors",
                 isActive
-                  ? "bg-[#52796f]/10 text-[#52796f] hover:bg-[#52796f]/15 hover:text-[#52796f]"
+                  ? "bg-[#3E2723]/10 text-[#C5A059] hover:bg-[#3E2723]/15 hover:text-[#C5A059]"
                   : "text-[#6c757d] hover:bg-gray-100 hover:text-[#212529]"
               )}
               asChild

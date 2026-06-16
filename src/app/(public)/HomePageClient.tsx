@@ -16,7 +16,7 @@ export default function HomePageClient() {
       {/* Organic Background Shapes */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <motion.div
-          className="absolute -top-40 -right-40 w-150 h-150 rounded-full bg-linear-to-br from-[#84a98c]/10 to-[#cad2c5]/5 blur-3xl"
+          className="absolute -top-40 -right-40 w-150 h-150 rounded-full bg-linear-to-br from-[#A0522D]/10 to-[#C5A059]/5 blur-3xl"
           animate={{
             scale: [1, 1.1, 1],
             rotate: [0, 5, 0],
@@ -24,7 +24,7 @@ export default function HomePageClient() {
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute top-1/2 -left-20 w-100 h-100 rounded-full bg-linear-to-tr from-[#52796f]/5 to-transparent blur-2xl"
+          className="absolute top-1/2 -left-20 w-100 h-100 rounded-full bg-linear-to-tr from-[#3E2723]/5 to-transparent blur-2xl"
           animate={{
             scale: [1, 1.05, 1],
             x: [0, 20, 0],

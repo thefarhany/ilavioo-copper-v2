@@ -439,7 +439,7 @@ export default function NewProductPage() {
                     onClick={() => toggleFinishing(finishing)}
                     className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
                       selectedFinishing.includes(finishing)
-                        ? "bg-[#52796f]/10 text-[#52796f] border border-[#52796f]/30"
+                        ? "bg-[#3E2723]/10 text-[#C5A059] border border-[#3E2723]/30"
                         : "bg-gray-100 text-gray-600 border border-transparent hover:bg-gray-200"
                     }`}
                   >
@@ -463,7 +463,7 @@ export default function NewProductPage() {
                     onClick={() => toggleCertification(cert)}
                     className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
                       selectedCertifications.includes(cert)
-                        ? "bg-emerald-100 text-emerald-700 border border-emerald-300"
+                        ? "bg-[#A0522D]/10 text-[#3E2723] border border-[#C5A059]"
                         : "bg-gray-100 text-gray-600 border border-transparent hover:bg-gray-200"
                     }`}
                   >
@@ -481,7 +481,7 @@ export default function NewProductPage() {
               
               <div
                 onClick={() => fileInputRef.current?.click()}
-                className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-[#52796f] hover:bg-[#84a98c]/10 transition-colors"
+                className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-[#3E2723] hover:bg-[#A0522D]/10 transition-colors"
               >
                 <Upload className="h-8 w-8 text-gray-400 mx-auto mb-3" />
                 <p className="text-sm text-gray-600">Click to upload or drag and drop</p>
@@ -508,7 +508,7 @@ export default function NewProductPage() {
                         className="object-cover"
                       />
                       {index === 0 && (
-                        <span className="absolute top-1 left-1 bg-[#52796f]/100 text-white text-xs px-2 py-0.5 rounded">
+                        <span className="absolute top-1 left-1 bg-[#3E2723]/100 text-white text-xs px-2 py-0.5 rounded">
                           Primary
                         </span>
                       )}
@@ -535,7 +535,7 @@ export default function NewProductPage() {
           <Button
             type="submit"
             disabled={isLoading}
-            className="bg-[#52796f] hover:bg-[#3d5c54]"
+            className="bg-[#3E2723] hover:bg-[#2A1B14]"
           >
             {isLoading ? "Creating..." : "Create Product"}
           </Button>
@@ -564,7 +564,7 @@ export default function NewProductPage() {
               <Button type="button" variant="outline" onClick={() => setIsCategoryDialogOpen(false)}>
                 Cancel
               </Button>
-              <Button type="submit" disabled={isCreatingCategory} className="bg-[#52796f] hover:bg-[#3d5c54]">
+              <Button type="submit" disabled={isCreatingCategory} className="bg-[#3E2723] hover:bg-[#2A1B14]">
                 {isCreatingCategory ? "Creating..." : "Create Category"}
               </Button>
             </div>

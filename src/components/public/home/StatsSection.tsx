@@ -32,7 +32,7 @@ export function StatsSection() {
               className="py-12 text-center"
             >
               <motion.p 
-                className="text-4xl md:text-5xl mb-2 bg-gradient-to-br from-[#52796f] to-[#84a98c] bg-clip-text text-transparent"
+                className="text-4xl md:text-5xl mb-2 bg-gradient-to-br from-[#3E2723] to-[#A0522D] bg-clip-text text-transparent"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {stat.value}

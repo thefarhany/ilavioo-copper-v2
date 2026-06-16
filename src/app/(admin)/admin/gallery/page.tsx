@@ -123,7 +123,7 @@ export default function AdminGalleryPage() {
         </div>
         <Dialog open={isUploadDialogOpen} onOpenChange={setIsUploadDialogOpen}>
           <DialogTrigger asChild>
-            <Button className="bg-[#52796f] hover:bg-[#3d5c54]">
+            <Button className="bg-[#3E2723] hover:bg-[#2A1B14]">
               <Plus className="h-4 w-4 mr-2" />
               Upload Media
             </Button>
@@ -164,7 +164,7 @@ export default function AdminGalleryPage() {
 
             <div className="flex justify-end gap-3 mt-4">
               <Button variant="outline" onClick={() => setIsUploadDialogOpen(false)}>Cancel</Button>
-              <Button onClick={handleUpload} disabled={!selectedFiles || isLoading} className="bg-[#52796f] hover:bg-[#3d5c54]">
+              <Button onClick={handleUpload} disabled={!selectedFiles || isLoading} className="bg-[#3E2723] hover:bg-[#2A1B14]">
                 {isLoading ? "Uploading..." : "Upload"}
               </Button>
             </div>
@@ -212,7 +212,7 @@ export default function AdminGalleryPage() {
             </div>
             <div className="flex justify-end gap-3">
               <Button type="button" variant="outline" onClick={() => setIsEditDialogOpen(false)}>Cancel</Button>
-              <Button type="submit" disabled={isUpdating} className="bg-[#52796f] hover:bg-[#3d5c54]">
+              <Button type="submit" disabled={isUpdating} className="bg-[#3E2723] hover:bg-[#2A1B14]">
                 {isUpdating ? "Updating..." : "Update"}
               </Button>
             </div>
@@ -245,7 +245,7 @@ function GalleryCard({
       {item.type === "video" && (
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-            <Play className="h-6 w-6 text-[#52796f] ml-0.5" fill="currentColor" />
+            <Play className="h-6 w-6 text-[#C5A059] ml-0.5" fill="currentColor" />
           </div>
         </div>
       )}

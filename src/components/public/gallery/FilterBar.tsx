@@ -40,13 +40,13 @@ export function FilterBar({
                 onClick={() => setFilter(tab.id)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   filter === tab.id
-                    ? "bg-white text-[#52796f] shadow-sm"
-                    : "text-[#78716c] hover:text-[#52796f]"
+                    ? "bg-white text-[#C5A059] shadow-sm"
+                    : "text-[#78716c] hover:text-[#C5A059]"
                 }`}
               >
                 {tab.label}
                 <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${
-                  filter === tab.id ? "bg-[#84a98c]/20 text-[#52796f]" : "bg-[#e7e5e4] text-[#78716c]"
+                  filter === tab.id ? "bg-[#A0522D]/20 text-[#C5A059]" : "bg-[#e7e5e4] text-[#78716c]"
                 }`}>
                   {tab.count}
                 </span>
@@ -59,7 +59,7 @@ export function FilterBar({
             <button
               onClick={() => setViewMode("masonry")}
               className={`p-2 rounded-lg transition-colors ${
-                viewMode === "masonry" ? "bg-[#84a98c]/10 text-[#52796f]" : "text-[#78716c]"
+                viewMode === "masonry" ? "bg-[#A0522D]/10 text-[#C5A059]" : "text-[#78716c]"
               }`}
               title="Masonry View"
             >
@@ -68,7 +68,7 @@ export function FilterBar({
             <button
               onClick={() => setViewMode("grid")}
               className={`p-2 rounded-lg transition-colors ${
-                viewMode === "grid" ? "bg-[#84a98c]/10 text-[#52796f]" : "text-[#78716c]"
+                viewMode === "grid" ? "bg-[#A0522D]/10 text-[#C5A059]" : "text-[#78716c]"
               }`}
               title="Grid View"
             >

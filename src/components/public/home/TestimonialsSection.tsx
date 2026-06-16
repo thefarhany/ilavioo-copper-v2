@@ -9,12 +9,12 @@ import Image from "next/image";
 
 function TestimonialCard({ testimonial }: { testimonial: any }) {
   return (
-    <div className="bg-white rounded-2xl p-8 shadow-lg shadow-[#84a98c]/5 border border-[#e7e5e4] h-full relative">
-      <Quote className="absolute top-6 right-6 h-8 w-8 text-[#84a98c]/20" />
+    <div className="bg-white rounded-2xl p-8 shadow-lg shadow-[#A0522D]/5 border border-[#e7e5e4] h-full relative">
+      <Quote className="absolute top-6 right-6 h-8 w-8 text-[#A0522D]/20" />
 
       <div className="flex items-center gap-1 mb-4">
         {[...Array(testimonial.rating || 5)].map((_, i) => (
-          <Star key={i} className="h-4 w-4 fill-[#84a98c] text-[#84a98c]" />
+          <Star key={i} className="h-4 w-4 fill-[#A0522D] text-[#A0522D]" />
         ))}
       </div>
 
@@ -26,7 +26,7 @@ function TestimonialCard({ testimonial }: { testimonial: any }) {
             <Image src={testimonial.imageUrl} alt={testimonial.name} fill className="object-cover" sizes="48px" />
           </div>
         ) : (
-          <div className="w-12 h-12 rounded-full bg-linear-to-br from-[#84a98c] to-[#52796f] flex items-center justify-center shrink-0">
+          <div className="w-12 h-12 rounded-full bg-linear-to-br from-[#A0522D] to-[#3E2723] flex items-center justify-center shrink-0">
             <span className="text-white font-medium">{testimonial.name.charAt(0)}</span>
           </div>
         )}
@@ -83,16 +83,16 @@ export function TestimonialsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-sm uppercase tracking-[0.2em] text-[#84a98c] mb-3 font-medium">Testimonials</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-[#A0522D] mb-3 font-medium">Testimonials</p>
           <h2 className="text-3xl md:text-4xl text-[#1c1917]" style={{ fontFamily: "'Playfair Display', serif" }}>
-            What Our <span className="text-[#52796f] italic">Clients</span> Say
+            What Our <span className="text-[#C5A059] italic">Clients</span> Say
           </h2>
         </motion.div>
 
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[...Array(3)].map((_, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 shadow-lg shadow-[#84a98c]/5 border border-[#e7e5e4] h-full animate-pulse">
+              <div key={i} className="bg-white rounded-2xl p-8 shadow-lg shadow-[#A0522D]/5 border border-[#e7e5e4] h-full animate-pulse">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, j) => (
                     <div key={j} className="h-4 w-4 bg-gray-200 rounded-full" />
@@ -135,13 +135,13 @@ export function TestimonialsSection() {
             <div className="flex items-center justify-center gap-4 mt-8">
               <button
                 onClick={scrollPrev}
-                className="w-10 h-10 rounded-full border border-[#e7e5e4] bg-white flex items-center justify-center text-[#52796f] hover:bg-[#52796f] hover:text-white hover:border-[#52796f] transition-colors"
+                className="w-10 h-10 rounded-full border border-[#e7e5e4] bg-white flex items-center justify-center text-[#C5A059] hover:bg-[#3E2723] hover:text-white hover:border-[#3E2723] transition-colors"
               >
                 <ChevronLeft className="h-5 w-5" />
               </button>
               <button
                 onClick={scrollNext}
-                className="w-10 h-10 rounded-full border border-[#e7e5e4] bg-white flex items-center justify-center text-[#52796f] hover:bg-[#52796f] hover:text-white hover:border-[#52796f] transition-colors"
+                className="w-10 h-10 rounded-full border border-[#e7e5e4] bg-white flex items-center justify-center text-[#C5A059] hover:bg-[#3E2723] hover:text-white hover:border-[#3E2723] transition-colors"
               >
                 <ChevronRight className="h-5 w-5" />
               </button>

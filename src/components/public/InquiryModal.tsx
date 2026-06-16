@@ -68,7 +68,7 @@ export function InquiryModal({ isOpen, onClose, productId, productName }: Inquir
                  <div>
                    <h2 className="text-xl font-semibold text-gray-900">Request Quote</h2>
                    {productName && (
-                     <p className="text-sm text-emerald-600 mt-1">Product: {productName}</p>
+                     <p className="text-sm text-[#A0522D] mt-1">Product: {productName}</p>
                    )}
                  </div>
                  <Button variant="ghost" size="icon" onClick={onClose}>

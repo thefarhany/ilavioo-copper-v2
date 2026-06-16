@@ -20,8 +20,8 @@ export function StorySection() {
               viewport={{ once: true }}
               className="flex items-center gap-2 mb-4"
             >
-              <Lightbulb className="h-5 w-5 text-[#84a98c]" />
-              <span className="text-sm uppercase tracking-[0.2em] text-[#84a98c] font-medium">
+              <Lightbulb className="h-5 w-5 text-[#A0522D]" />
+              <span className="text-sm uppercase tracking-[0.2em] text-[#A0522D] font-medium">
                 Our Story
               </span>
             </motion.div>
@@ -31,10 +31,10 @@ export function StorySection() {
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Three Decades of
-              <span className="text-[#52796f] italic"> Excellence</span>
+              <span className="text-[#C5A059] italic"> Excellence</span>
             </h2>
 
-            <div className="w-24 h-0.5 bg-linear-to-r from-[#84a98c] to-[#cad2c5] mb-8" />
+            <div className="w-24 h-0.5 bg-linear-to-r from-[#A0522D] to-[#C5A059] mb-8" />
 
             <div className="space-y-4 text-[#78716c] leading-relaxed">
               <p>
@@ -58,7 +58,7 @@ export function StorySection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="flex items-center gap-2 mt-8 text-[#52796f]"
+              className="flex items-center gap-2 mt-8 text-[#C5A059]"
             >
               <MapPin className="h-4 w-4" />
               <span className="text-sm">Based in Tumang, Boyolali, Indonesia</span>
@@ -72,14 +72,15 @@ export function StorySection() {
             transition={{ delay: 0.1 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-linear-to-br from-[#84a98c]/20 to-[#cad2c5]/20 rounded-3xl transform rotate-3" />
+            <div className="absolute inset-0 bg-linear-to-br from-[#A0522D]/20 to-[#C5A059]/20 rounded-3xl transform rotate-3" />
 
-            <div className="relative aspect-4/3 bg-[#f5f5f4] rounded-3xl overflow-hidden shadow-2xl shadow-[#84a98c]/10">
+            <div className="relative aspect-4/3 bg-[#f5f5f4] rounded-3xl overflow-hidden shadow-2xl shadow-[#A0522D]/10">
               <Image
                 src="https://res.cloudinary.com/dqcdwv7du/image/upload/v1779014825/hero-2_jhpkij.jpg"
                 alt="Workshop"
                 fill
                 className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
               <div className="absolute inset-0 bg-linear-to-t from-[#1c1917]/40 to-transparent" />
@@ -93,7 +94,7 @@ export function StorySection() {
                 className="absolute bottom-6 left-6 bg-white rounded-2xl p-4 shadow-xl"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-linear-to-br from-[#84a98c] to-[#52796f] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-linear-to-br from-[#A0522D] to-[#3E2723] flex items-center justify-center">
                     <Award className="w-5 h-5 text-white" />
                   </div>
 

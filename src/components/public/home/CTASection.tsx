@@ -8,7 +8,7 @@ export function CTASection() {
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#52796f] to-[#84a98c]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#3E2723] to-[#A0522D]" />
       
       {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
@@ -78,7 +78,7 @@ export function CTASection() {
         >
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#52796f] rounded-full font-medium hover:bg-[#f1f5f3] transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#C5A059] rounded-full font-medium hover:bg-[#F5F0E8] transition-colors"
           >
             Browse Products
             <ArrowRight className="h-4 w-4" />

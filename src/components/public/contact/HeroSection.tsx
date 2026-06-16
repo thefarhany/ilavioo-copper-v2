@@ -24,7 +24,7 @@ export function HeroSection() {
 
       {/* Decorative Elements */}
       <motion.div
-        className="absolute top-20 right-20 w-32 h-32 rounded-full bg-[#84a98c]/20 blur-3xl"
+        className="absolute top-20 right-20 w-32 h-32 rounded-full bg-[#A0522D]/20 blur-3xl"
         animate={{
           scale: [1, 1.3, 1],
           opacity: [0.3, 0.5, 0.3],
@@ -32,7 +32,7 @@ export function HeroSection() {
         transition={{ duration: 5, repeat: Infinity }}
       />
       <motion.div
-        className="absolute bottom-20 left-20 w-48 h-48 rounded-full bg-[#52796f]/20 blur-3xl"
+        className="absolute bottom-20 left-20 w-48 h-48 rounded-full bg-[#3E2723]/20 blur-3xl"
         animate={{
           scale: [1, 1.2, 1],
         }}
@@ -47,7 +47,7 @@ export function HeroSection() {
           transition={{ duration: 0.6 }}
           className="w-20 h-20 mb-8 rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20"
         >
-          <MessageSquare className="w-10 h-10 text-[#84a98c]" />
+          <MessageSquare className="w-10 h-10 text-[#A0522D]" />
         </motion.div>
 
         {/* Breadcrumb */}
@@ -66,7 +66,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-sm uppercase tracking-[0.3em] text-[#84a98c] mb-4 font-medium"
+          className="text-sm uppercase tracking-[0.3em] text-[#A0522D] mb-4 font-medium"
         >
           Get In Touch
         </motion.p>
@@ -79,7 +79,7 @@ export function HeroSection() {
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           Let&apos;s Start a
-          <span className="block text-[#84a98c] italic">Conversation</span>
+          <span className="block text-[#A0522D] italic">Conversation</span>
         </motion.h1>
 
         <motion.p
@@ -108,7 +108,7 @@ export function HeroSection() {
               whileHover={{ y: -5 }}
               className="flex flex-col items-center gap-2 bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/10"
             >
-              <stat.icon className="h-5 w-5 text-[#84a98c]" />
+              <stat.icon className="h-5 w-5 text-[#A0522D]" />
               <p className="text-2xl font-light text-white">{stat.value}</p>
               <p className="text-xs text-white/60 uppercase tracking-wider">
                 {stat.label}

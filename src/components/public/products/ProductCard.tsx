@@ -23,7 +23,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
     >
       <Link href={`/products/${product.slug}`} className="block">
         {/* Card Container dengan border dan shadow */}
-        <div className="bg-white rounded-2xl border border-[#e7e5e4] overflow-hidden shadow-sm hover:shadow-xl hover:shadow-[#84a98c]/10 hover:border-[#84a98c]/30 transition-all duration-500">
+        <div className="bg-white rounded-2xl border border-[#e7e5e4] overflow-hidden shadow-sm hover:shadow-xl hover:shadow-[#A0522D]/10 hover:border-[#A0522D]/30 transition-all duration-500">
           {/* Image Container */}
           <div className="relative aspect-[4/5] overflow-hidden bg-[#f5f5f4]">
             <Image
@@ -40,14 +40,14 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             {/* Arrow Icon - Muncul di tengah */}
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
               <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition-transform duration-500">
-                <ArrowUpRight className="h-6 w-6 text-[#52796f]" />
+                <ArrowUpRight className="h-6 w-6 text-[#C5A059]" />
               </div>
             </div>
 
             {/* Customizable Badge */}
             {product.isCustomizable && (
               <div className="absolute bottom-4 left-4">
-                <span className="flex items-center gap-1.5 px-3 py-1.5 bg-white text-[#52796f] text-xs uppercase tracking-wider rounded-full shadow-md">
+                <span className="flex items-center gap-1.5 px-3 py-1.5 bg-white text-[#C5A059] text-xs uppercase tracking-wider rounded-full shadow-md">
                   <Sparkles className="h-3 w-3" />
                   Custom
                 </span>
@@ -57,7 +57,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             {/* Featured Badge */}
             {product.isFeatured && (
               <div className="absolute top-4 left-4">
-                <span className="px-3 py-1.5 bg-gradient-to-r from-[#84a98c] to-[#52796f] text-white text-xs uppercase tracking-wider rounded-full shadow-md">
+                <span className="px-3 py-1.5 bg-gradient-to-r from-[#A0522D] to-[#3E2723] text-white text-xs uppercase tracking-wider rounded-full shadow-md">
                   Featured
                 </span>
               </div>
@@ -67,13 +67,13 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           {/* Info - dengan padding */}
           <div className="p-5">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs uppercase tracking-wider text-[#84a98c] font-medium">
+              <span className="text-xs uppercase tracking-wider text-[#A0522D] font-medium">
                 {product.category?.name}
               </span>
             </div>
             
             <h3 
-              className="text-lg text-[#1c1917] group-hover:text-[#52796f] transition-colors font-medium mb-2 line-clamp-1"
+              className="text-lg text-[#1c1917] group-hover:text-[#C5A059] transition-colors font-medium mb-2 line-clamp-1"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               {product.name}
@@ -85,7 +85,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             
             <div className="flex items-center justify-between pt-3 border-t border-[#e7e5e4]">
               <div className="flex items-baseline gap-1">
-                <span className="text-lg text-[#52796f] font-semibold">
+                <span className="text-lg text-[#C5A059] font-semibold">
                   {product.minPrice ? `$${(product.minPrice / 100).toFixed(2)}` : "Contact"}
                 </span>
                 <span className="text-xs text-[#a8a29e]">

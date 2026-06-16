@@ -23,13 +23,14 @@ export function WhyChooseSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-linear-to-br from-[#84a98c]/20 to-[#cad2c5]/20 rounded-3xl transform -rotate-3" />
-            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl shadow-[#84a98c]/10">
+            <div className="absolute inset-0 bg-linear-to-br from-[#A0522D]/20 to-[#C5A059]/20 rounded-3xl transform -rotate-3" />
+            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl shadow-[#A0522D]/10">
               <Image
                 src="https://res.cloudinary.com/dqcdwv7du/image/upload/v1779014827/about_er8yi0.jpg"
                 alt="Craftsman at work"
                 fill
                 className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
 
@@ -39,11 +40,11 @@ export function WhyChooseSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-xl shadow-[#84a98c]/10 border border-[#e7e5e4]"
+              className="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-xl shadow-[#A0522D]/10 border border-[#e7e5e4]"
             >
               <div className="text-center">
                 <p
-                  className="text-4xl text-[#52796f] mb-1"
+                  className="text-4xl text-[#C5A059] mb-1"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
                   30+
@@ -59,7 +60,7 @@ export function WhyChooseSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <p className="text-sm uppercase tracking-[0.2em] text-[#84a98c] mb-3 font-medium">
+            <p className="text-sm uppercase tracking-[0.2em] text-[#A0522D] mb-3 font-medium">
               Why Ilavio
             </p>
             <h2
@@ -67,7 +68,7 @@ export function WhyChooseSection() {
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Crafted with{" "}
-              <span className="text-[#52796f] italic">Passion</span>
+              <span className="text-[#C5A059] italic">Passion</span>
             </h2>
             <p className="text-[#78716c] leading-relaxed mb-8">
               Every piece we create carries the legacy of traditional
@@ -85,8 +86,8 @@ export function WhyChooseSection() {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="w-6 h-6 rounded-full bg-[#84a98c]/10 flex items-center justify-center shrink-0 mt-0.5">
-                    <Check className="h-3.5 w-3.5 text-[#84a98c]" />
+                  <div className="w-6 h-6 rounded-full bg-[#A0522D]/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <Check className="h-3.5 w-3.5 text-[#A0522D]" />
                   </div>
                   <span className="text-[#1c1917]">{feature}</span>
                 </motion.div>

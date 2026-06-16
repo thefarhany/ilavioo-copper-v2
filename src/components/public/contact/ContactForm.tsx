@@ -85,7 +85,7 @@ export function ContactForm() {
       transition={{ delay: 0.1 }}
       className="lg:col-span-3"
     >
-      <div className="bg-white rounded-3xl shadow-xl shadow-[#84a98c]/10 border border-[#e7e5e4] p-8 lg:p-10">
+      <div className="bg-white rounded-3xl shadow-xl shadow-[#A0522D]/10 border border-[#e7e5e4] p-8 lg:p-10">
         <AnimatePresence mode="wait">
           {isSubmitted ? (
             <motion.div
@@ -99,7 +99,7 @@ export function ContactForm() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: "spring" }}
-                className="w-20 h-20 mx-auto mb-6 rounded-full bg-linear-to-br from-[#84a98c] to-[#52796f] flex items-center justify-center"
+                className="w-20 h-20 mx-auto mb-6 rounded-full bg-linear-to-br from-[#A0522D] to-[#3E2723] flex items-center justify-center"
               >
                 <Check className="w-10 h-10 text-white" />
               </motion.div>
@@ -126,8 +126,8 @@ export function ContactForm() {
               className="space-y-6"
             >
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-0.5 bg-[#84a98c]" />
-                <span className="text-sm uppercase tracking-[0.2em] text-[#84a98c] font-medium">
+                <div className="w-8 h-0.5 bg-[#A0522D]" />
+                <span className="text-sm uppercase tracking-[0.2em] text-[#A0522D] font-medium">
                   Send Message
                 </span>
               </div>
@@ -142,7 +142,7 @@ export function ContactForm() {
                     required
                     value={formData.name}
                     onChange={(e) => updateField("name", e.target.value)}
-                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#84a98c]/20 py-3 px-4"
+                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#A0522D]/20 py-3 px-4"
                     placeholder="John Doe"
                   />
                 </div>
@@ -156,7 +156,7 @@ export function ContactForm() {
                     required
                     value={formData.email}
                     onChange={(e) => updateField("email", e.target.value)}
-                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#84a98c]/20 py-3 px-4"
+                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#A0522D]/20 py-3 px-4"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -169,7 +169,7 @@ export function ContactForm() {
                     type="text"
                     value={formData.company}
                     onChange={(e) => updateField("company", e.target.value)}
-                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#84a98c]/20 py-3 px-4"
+                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#A0522D]/20 py-3 px-4"
                     placeholder="Your Company"
                   />
                 </div>
@@ -182,7 +182,7 @@ export function ContactForm() {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => updateField("phone", e.target.value)}
-                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#84a98c]/20 py-3 px-4"
+                    className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#A0522D]/20 py-3 px-4"
                     placeholder="+1 234 567 890"
                   />
                 </div>
@@ -197,7 +197,7 @@ export function ContactForm() {
                   required
                   value={formData.subject}
                   onChange={(e) => updateField("subject", e.target.value)}
-                  className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#84a98c]/20 py-3 px-4"
+                  className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#A0522D]/20 py-3 px-4"
                   placeholder="How can we help you?"
                 />
               </div>
@@ -211,7 +211,7 @@ export function ContactForm() {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => updateField("message", e.target.value)}
-                  className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#84a98c]/20 py-3 px-4 resize-none"
+                  className="bg-[#f5f5f4] border-0 rounded-xl focus-visible:ring-2 focus-visible:ring-[#A0522D]/20 py-3 px-4 resize-none"
                   placeholder="Tell us about your project, requirements, or any questions you have..."
                 />
               </div>
@@ -228,7 +228,7 @@ export function ContactForm() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full h-14 bg-linear-to-r from-[#84a98c] to-[#52796f] hover:from-[#52796f] hover:to-[#84a98c] text-white text-sm uppercase tracking-wider rounded-xl font-medium shadow-lg shadow-[#84a98c]/25 transition-all duration-300"
+                className="w-full h-14 bg-linear-to-r from-[#A0522D] to-[#3E2723] hover:from-[#3E2723] hover:to-[#A0522D] text-white text-sm uppercase tracking-wider rounded-xl font-medium shadow-lg shadow-[#A0522D]/25 transition-all duration-300"
               >
                 {isSubmitting ? (
                   <>

@@ -39,7 +39,10 @@ export function ProductDetailGallery({ images, productName }: ProductDetailGalle
   return (
     <div className="space-y-4">
       {/* Main Image */}
-      <div className="relative aspect-[4/5] bg-stone-100 overflow-hidden cursor-zoom-in group">
+      <div
+        className="relative aspect-[4/5] bg-stone-100 overflow-hidden cursor-zoom-in group"
+        onClick={() => setLightboxOpen(true)}
+      >
         <Image
           src={selectedImage.url}
           alt={productName}
@@ -47,11 +50,10 @@ export function ProductDetailGallery({ images, productName }: ProductDetailGalle
           className="object-cover transition-transform duration-700"
           priority
           sizes="(max-width: 1024px) 100vw, 50vw"
-          onClick={() => setLightboxOpen(true)}
         />
 
         {/* Hover Overlay */}
-        <div className="absolute inset-0 bg-emerald-900/0 group-hover:bg-emerald-900/5 transition-colors duration-500" />
+        <div className="absolute inset-0 bg-[#3E2723]/0 group-hover:bg-[#3E2723]/5 transition-colors duration-500 pointer-events-none" />
 
         {/* Navigation Arrows */}
         {displayImages.length > 1 && (
@@ -61,7 +63,7 @@ export function ProductDetailGallery({ images, productName }: ProductDetailGalle
                 e.stopPropagation();
                 handlePrev();
               }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 text-stone-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-emerald-700 hover:text-white"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 text-stone-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-[#3E2723] hover:text-white"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -70,7 +72,7 @@ export function ProductDetailGallery({ images, productName }: ProductDetailGalle
                 e.stopPropagation();
                 handleNext();
               }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 text-stone-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-emerald-700 hover:text-white"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 text-stone-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-[#3E2723] hover:text-white"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -79,7 +81,7 @@ export function ProductDetailGallery({ images, productName }: ProductDetailGalle
 
         {/* Image Counter */}
         {displayImages.length > 1 && (
-          <div className="absolute bottom-4 right-4 px-3 py-1 bg-white/90 text-stone-600 text-xs">
+          <div className="absolute bottom-4 right-4 px-3 py-1 bg-white/90 text-stone-600 text-xs pointer-events-none">
             {selectedIndex + 1} / {displayImages.length}
           </div>
         )}
@@ -94,7 +96,7 @@ export function ProductDetailGallery({ images, productName }: ProductDetailGalle
               onClick={() => handleThumbnailClick(index)}
               className={`relative flex-shrink-0 w-20 h-20 overflow-hidden transition-all ${
                 selectedIndex === index
-                  ? "ring-2 ring-emerald-600 ring-offset-2"
+                  ? "ring-2 ring-[#A0522D] ring-offset-2"
                   : "opacity-60 hover:opacity-100"
               }`}
             >

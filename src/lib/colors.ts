@@ -1,25 +1,25 @@
 export const colors = {
-  // Primary - Sage Green
+  // Primary - Copper Bronze
   primary: {
-    50: "#f4f7f4",
-    100: "#e3ebe3",
-    200: "#c5d9c5",
-    300: "#9caf88",
-    400: "#7a9a6d",
-    500: "#5c7a52",
-    600: "#466140",
-    700: "#384d35",
-    800: "#2f3e2d",
-    900: "#273327",
+    50: "#fdf6f0",
+    100: "#f5e0d0",
+    200: "#e8c0a0",
+    300: "#d4a070",
+    400: "#c08050",
+    500: "#A0522D",
+    600: "#8a4526",
+    700: "#70381f",
+    800: "#3E2723",
+    900: "#2A1B14",
   },
-  // Accent - Mint
-  mint: {
-    50: "#f0fdf7",
-    100: "#dcfce9",
-    200: "#bbf7d8",
-    300: "#98d9c2",
-    400: "#86efac",
-    500: "#4ade80",
+  // Accent - Muted Gold
+  gold: {
+    50: "#fdfaf3",
+    100: "#f5ecd8",
+    200: "#e8d5b0",
+    300: "#C5A059",
+    400: "#a88840",
+    500: "#8a7030",
   },
   // Neutral - Industrial
   neutral: {

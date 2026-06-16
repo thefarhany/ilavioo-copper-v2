@@ -74,7 +74,7 @@ export default function AdminTestimonialsPage() {
           <p className="text-gray-600">Manage client testimonials and reviews</p>
         </div>
         <Link href="/admin/testimonials/new">
-          <Button className="bg-[#52796f] hover:bg-[#3d5c54]">
+          <Button className="bg-[#3E2723] hover:bg-[#2A1B14]">
             <Plus className="h-4 w-4 mr-2" />
             Add Testimonial
           </Button>

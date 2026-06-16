@@ -61,7 +61,7 @@ export function Footer() {
                 alt="Ilavioo Logo"
                 width={40}
                 height={40}
-                className="rounded-full"
+                className="rounded-full w-auto h-auto"
               />
               <span
                 className="text-xl font-semibold"
@@ -82,7 +82,7 @@ export function Footer() {
                   href={social.href}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#84a98c] transition-colors"
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#A0522D] transition-colors"
                   aria-label={social.label}
                 >
                   <social.icon className="w-4 h-4" />
@@ -93,7 +93,7 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h3 className="text-sm uppercase tracking-wider text-[#84a98c] mb-6 font-medium">
+            <h3 className="text-sm uppercase tracking-wider text-[#A0522D] mb-6 font-medium">
               Products
             </h3>
             <ul className="space-y-3">
@@ -112,7 +112,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-sm uppercase tracking-wider text-[#84a98c] mb-6 font-medium">
+            <h3 className="text-sm uppercase tracking-wider text-[#A0522D] mb-6 font-medium">
               Company
             </h3>
             <ul className="space-y-3">
@@ -131,12 +131,12 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm uppercase tracking-wider text-[#84a98c] mb-6 font-medium">
+            <h3 className="text-sm uppercase tracking-wider text-[#A0522D] mb-6 font-medium">
               Contact
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#84a98c] shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-[#A0522D] shrink-0 mt-0.5" />
                 <span className="text-[#a8a29e] text-sm">
                   Tumang, Boyolali, Central Java, Indonesia
                 </span>
@@ -148,7 +148,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 hover:text-white transition-colors"
                 >
-                  <Phone className="w-5 h-5 text-[#84a98c] shrink-0" />
+                  <Phone className="w-5 h-5 text-[#A0522D] shrink-0" />
                   <span className="text-[#a8a29e] text-sm">
                     +62 8121-3696-772
                   </span>
@@ -159,7 +159,7 @@ export function Footer() {
                   href="mailto:marketing@ilavioo.com"
                   className="flex items-center gap-3 hover:text-white transition-colors"
                 >
-                  <Mail className="w-5 h-5 text-[#84a98c] shrink-0" />
+                  <Mail className="w-5 h-5 text-[#A0522D] shrink-0" />
                   <span className="text-[#a8a29e] text-sm">
                     marketing@ilavioo.com
                   </span>
@@ -179,7 +179,7 @@ export function Footer() {
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="w-12 h-12 rounded-full bg-[#84a98c] flex items-center justify-center hover:bg-[#52796f] transition-colors"
+            className="w-12 h-12 rounded-full bg-[#A0522D] flex items-center justify-center hover:bg-[#3E2723] transition-colors"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-5 h-5" />

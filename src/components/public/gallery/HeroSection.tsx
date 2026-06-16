@@ -11,14 +11,14 @@ interface GalleryHeroProps {
 
 export function HeroSection({ imageCount, videoCount }: GalleryHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-[#52796f]">
+    <section className="relative overflow-hidden bg-[#3E2723]">
       {/* Subtle warm gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#52796f] via-[#5f8579] to-[#84a98c]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#3E2723] via-[#5f8579] to-[#A0522D]" />
 
       {/* Soft radial glow accents */}
-      <div className="absolute top-0 left-1/3 w-96 h-96 rounded-full bg-[#84a98c]/20 blur-[120px]" />
-      <div className="absolute bottom-0 right-1/3 w-80 h-80 rounded-full bg-[#52796f]/30 blur-[100px]" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#84a98c]/10 blur-[150px]" />
+      <div className="absolute top-0 left-1/3 w-96 h-96 rounded-full bg-[#A0522D]/20 blur-[120px]" />
+      <div className="absolute bottom-0 right-1/3 w-80 h-80 rounded-full bg-[#3E2723]/30 blur-[100px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#A0522D]/10 blur-[150px]" />
 
       {/* Floating soft orbs - very subtle */}
       <motion.div

@@ -33,7 +33,7 @@ export function Navbar() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
         {/* TopBar — instantly hidden on scroll (no transition to avoid center glitches) */}
         <div
-          className={`bg-[#52796f] text-white py-2 px-4 text-sm ${
+          className={`bg-[#3E2723] text-white py-2 px-4 text-sm ${
             scrolled ? "hidden" : "block"
           }`}
         >
@@ -43,14 +43,14 @@ export function Navbar() {
                 href="https://wa.me/6281213696772"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#84a98c] transition-colors"
+                className="flex items-center gap-2 hover:text-[#A0522D] transition-colors"
               >
                 <FaWhatsapp className="h-3.5 w-3.5" />
                 <span>+62 8121-3696-772</span>
               </Link>
               <Link
                 href="mailto:marketing@ilavioo.com"
-                className="hidden sm:flex items-center gap-2 hover:text-[#84a98c] transition-colors"
+                className="hidden sm:flex items-center gap-2 hover:text-[#A0522D] transition-colors"
               >
                 <Mail className="h-3.5 w-3.5" />
                 <span>marketing@ilavioo.com</span>
@@ -72,7 +72,7 @@ export function Navbar() {
                 alt="Ilavioo Logo"
                 width={40}
                 height={40}
-                className="rounded-full"
+                className="rounded-full w-auto h-auto"
               />
               <span
                 className="text-xl font-semibold text-[#1c1917]"
@@ -90,7 +90,7 @@ export function Navbar() {
                   className="relative text-sm font-medium text-[#1c1917] transition-colors group py-2"
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#84a98c] transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#A0522D] transition-all duration-300 group-hover:w-full" />
                 </Link>
               ))}
             </nav>
@@ -98,7 +98,7 @@ export function Navbar() {
             <div className="hidden lg:block">
               <Button
                 asChild
-                className="bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full px-6 shadow-lg shadow-[#84a98c]/25 transition-all duration-300"
+                className="bg-[#A0522D] hover:bg-[#3E2723] text-white rounded-full px-6 shadow-lg shadow-[#A0522D]/25 transition-all duration-300"
               >
                 <a
                   href="/catalog-ilavioo-v2.pdf"
@@ -148,7 +148,7 @@ export function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="mt-4 inline-flex items-center justify-center px-4 py-2 bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full text-sm font-medium transition-colors"
+              className="mt-4 inline-flex items-center justify-center px-4 py-2 bg-[#A0522D] hover:bg-[#3E2723] text-white rounded-full text-sm font-medium transition-colors"
             >
               Download Catalog
             </a>

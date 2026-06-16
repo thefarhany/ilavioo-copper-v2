@@ -16,11 +16,11 @@ export function FinalCTA({ variant = "default" }: FinalCTAProps) {
   const Icon = variant === "products" ? MessageSquare : ArrowUpRight;
 
   return (
-    <section className="py-24 bg-[#f1f5f3] relative overflow-hidden">
+    <section className="py-24 bg-[#F5F0E8] relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
-          className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-[#84a98c]/10 to-transparent blur-3xl"
+          className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-[#A0522D]/10 to-transparent blur-3xl"
           animate={{ 
             scale: [1, 1.1, 1],
             rotate: [0, 10, 0]
@@ -38,12 +38,12 @@ export function FinalCTA({ variant = "default" }: FinalCTAProps) {
         >
           <motion.div
             whileHover={{ rotate: 15 }}
-            className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-[#84a98c] to-[#52796f] flex items-center justify-center shadow-lg shadow-[#84a98c]/25"
+            className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-[#A0522D] to-[#3E2723] flex items-center justify-center shadow-lg shadow-[#A0522D]/25"
           >
             <Sparkles className="h-8 w-8 text-white" />
           </motion.div>
 
-          <p className="text-sm uppercase tracking-[0.2em] text-[#84a98c] font-medium">
+          <p className="text-sm uppercase tracking-[0.2em] text-[#A0522D] font-medium">
             Get Started
           </p>
 
@@ -64,14 +64,14 @@ export function FinalCTA({ variant = "default" }: FinalCTAProps) {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => setIsModalOpen(true)}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#84a98c] text-white text-sm uppercase tracking-wider rounded-full hover:bg-[#52796f] transition-colors shadow-lg shadow-[#84a98c]/25"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A0522D] text-white text-sm uppercase tracking-wider rounded-full hover:bg-[#3E2723] transition-colors shadow-lg shadow-[#A0522D]/25"
             >
               Request Quote
               <Icon className="h-4 w-4" />
             </motion.button>
             <Link 
               href="/products"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#84a98c] text-[#52796f] text-sm uppercase tracking-wider rounded-full hover:bg-[#84a98c] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#A0522D] text-[#C5A059] text-sm uppercase tracking-wider rounded-full hover:bg-[#A0522D] hover:text-white transition-colors"
             >
               Browse Catalog
             </Link>

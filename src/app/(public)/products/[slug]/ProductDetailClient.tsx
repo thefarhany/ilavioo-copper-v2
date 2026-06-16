@@ -19,7 +19,7 @@ function RelatedCard({ product }: { product: Product }) {
 
   return (
     <Link href={`/products/${product.slug}`} className="group block">
-      <div className="bg-white rounded-2xl overflow-hidden border border-[#e7e5e4] shadow-sm hover:shadow-xl hover:shadow-[#84a98c]/10 hover:border-[#84a98c]/30 transition-all duration-500">
+      <div className="bg-white rounded-2xl overflow-hidden border border-[#e7e5e4] shadow-sm hover:shadow-xl hover:shadow-[#A0522D]/10 hover:border-[#A0522D]/30 transition-all duration-500">
         <div className="relative aspect-4/5 bg-[#f5f5f4] overflow-hidden">
           <Image
             src={imageUrl}
@@ -32,15 +32,15 @@ function RelatedCard({ product }: { product: Product }) {
 
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition-transform duration-500">
-              <ArrowRight className="h-4 w-4 text-[#52796f]" />
+              <ArrowRight className="h-4 w-4 text-[#C5A059]" />
             </div>
           </div>
         </div>
         <div className="p-4">
-          <p className="text-xs uppercase tracking-wider text-[#84a98c] mb-1">
+          <p className="text-xs uppercase tracking-wider text-[#A0522D] mb-1">
             {product.category?.name}
           </p>
-          <h3 className="text-sm text-[#1c1917] group-hover:text-[#52796f] transition-colors line-clamp-1">
+          <h3 className="text-sm text-[#1c1917] group-hover:text-[#C5A059] transition-colors line-clamp-1">
             {product.name}
           </h3>
         </div>
@@ -133,7 +133,7 @@ export default function ProductDetailClient() {
           </h1>
           <Link
             href="/products"
-            className="mt-4 inline-flex items-center gap-2 text-sm uppercase tracking-wider text-[#52796f] hover:text-[#84a98c] transition-colors"
+            className="mt-4 inline-flex items-center gap-2 text-sm uppercase tracking-wider text-[#C5A059] hover:text-[#A0522D] transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Products
@@ -179,7 +179,7 @@ export default function ProductDetailClient() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="flex items-center justify-between mb-12">
               <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-[#84a98c] mb-2 font-medium">
+                <p className="text-sm uppercase tracking-[0.2em] text-[#A0522D] mb-2 font-medium">
                   You May Also Like
                 </p>
                 <h2
@@ -191,7 +191,7 @@ export default function ProductDetailClient() {
               </div>
               <Link
                 href="/products"
-                className="group hidden sm:inline-flex items-center gap-2 text-sm uppercase tracking-wider text-[#52796f] hover:text-[#84a98c] transition-colors"
+                className="group hidden sm:inline-flex items-center gap-2 text-sm uppercase tracking-wider text-[#C5A059] hover:text-[#A0522D] transition-colors"
               >
                 View All Products
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

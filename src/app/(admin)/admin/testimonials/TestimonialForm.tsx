@@ -234,7 +234,7 @@ export default function TestimonialForm({ testimonialId, isEdit = false }: Testi
           <Button
             type="submit"
             disabled={isLoading}
-            className="bg-[#52796f] hover:bg-[#3d5c54]"
+            className="bg-[#3E2723] hover:bg-[#2A1B14]"
           >
             <Save className="h-4 w-4 mr-2" />
             {isLoading ? "Saving..." : isEdit ? "Update Testimonial" : "Create Testimonial"}

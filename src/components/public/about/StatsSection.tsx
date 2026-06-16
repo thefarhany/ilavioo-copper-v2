@@ -17,23 +17,23 @@ export function StatsSection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white rounded-2xl shadow-xl shadow-[#84a98c]/10 border border-[#e7e5e4] overflow-hidden"
+          className="bg-white rounded-2xl shadow-xl shadow-[#A0522D]/10 border border-[#e7e5e4] overflow-hidden"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#e7e5e4]">
             {stats.map((stat, i) => (
               <motion.div
                 key={stat.label}
-                whileHover={{ backgroundColor: "#f1f5f3" }}
+                whileHover={{ backgroundColor: "#F5F0E8" }}
                 className="py-8 px-6 text-center transition-colors"
               >
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="w-12 h-12 mx-auto mb-4 rounded-xl bg-linear-to-br from-[#84a98c] to-[#52796f] flex items-center justify-center shadow-lg shadow-[#84a98c]/25"
+                  className="w-12 h-12 mx-auto mb-4 rounded-xl bg-linear-to-br from-[#A0522D] to-[#3E2723] flex items-center justify-center shadow-lg shadow-[#A0522D]/25"
                 >
                   <stat.icon className="h-5 w-5 text-white" />
                 </motion.div>
                 <p
-                  className="text-3xl md:text-4xl bg-linear-to-br from-[#52796f] to-[#84a98c] bg-clip-text text-transparent"
+                  className="text-3xl md:text-4xl bg-linear-to-br from-[#3E2723] to-[#A0522D] bg-clip-text text-transparent"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
                   {stat.value}

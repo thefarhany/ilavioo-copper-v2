@@ -31,11 +31,11 @@ const processSteps = [
 
 export function ProcessSection() {
   return (
-    <section className="py-24 bg-[#f1f5f3] relative overflow-hidden">
+    <section className="py-24 bg-[#F5F0E8] relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full bg-[#84a98c]/5 blur-3xl" />
-        <div className="absolute bottom-1/4 -right-32 w-64 h-64 rounded-full bg-[#52796f]/5 blur-3xl" />
+        <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full bg-[#A0522D]/5 blur-3xl" />
+        <div className="absolute bottom-1/4 -right-32 w-64 h-64 rounded-full bg-[#3E2723]/5 blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
@@ -44,7 +44,7 @@ export function ProcessSection() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-sm uppercase tracking-[0.2em] text-[#84a98c] mb-3 font-medium"
+            className="text-sm uppercase tracking-[0.2em] text-[#A0522D] mb-3 font-medium"
           >
             Our Process
           </motion.p>
@@ -58,7 +58,7 @@ export function ProcessSection() {
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             From Concept to
-            <span className="text-[#52796f] italic"> Creation</span>
+            <span className="text-[#C5A059] italic"> Creation</span>
           </motion.h2>
         </div>
 
@@ -73,15 +73,15 @@ export function ProcessSection() {
               whileHover={{ y: -8 }}
               className="group relative"
             >
-              <div className="bg-white rounded-2xl p-8 shadow-lg shadow-[#84a98c]/5 h-full border border-[#e7e5e4] group-hover:border-[#84a98c]/30 transition-all">
+              <div className="bg-white rounded-2xl p-8 shadow-lg shadow-[#A0522D]/5 h-full border border-[#e7e5e4] group-hover:border-[#A0522D]/30 transition-all">
                 <span
-                  className="text-5xl font-extralight text-[#84a98c]/30 group-hover:text-[#84a98c]/50 transition-colors"
+                  className="text-5xl font-extralight text-[#A0522D]/30 group-hover:text-[#A0522D]/50 transition-colors"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
                   {step.step}
                 </span>
 
-                <div className="w-12 h-0.5 bg-linear-to-r from-[#84a98c] to-[#cad2c5] my-4" />
+                <div className="w-12 h-0.5 bg-linear-to-r from-[#A0522D] to-[#C5A059] my-4" />
 
                 <h3 className="text-xl text-[#1c1917] mb-3 font-medium">
                   {step.title}
@@ -94,7 +94,7 @@ export function ProcessSection() {
 
               {/* Connector Line */}
               {index < processSteps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-linear-to-r from-[#84a98c]/30 to-transparent" />
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-linear-to-r from-[#A0522D]/30 to-transparent" />
               )}
             </motion.div>
           ))}

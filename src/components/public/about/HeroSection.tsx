@@ -16,6 +16,7 @@ export function HeroSection() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-linear-to-r from-[#1c1917]/90 via-[#1c1917]/70 to-transparent" />
       </div>
@@ -37,7 +38,7 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="w-16 h-16 mb-6 rounded-2xl bg-linear-to-br from-[#84a98c] to-[#52796f] flex items-center justify-center"
+            className="w-16 h-16 mb-6 rounded-2xl bg-linear-to-br from-[#A0522D] to-[#3E2723] flex items-center justify-center"
           >
             <Target className="w-8 h-8 text-white" />
           </motion.div>
@@ -46,7 +47,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-sm uppercase tracking-[0.3em] text-[#84a98c] mb-4 font-medium"
+            className="text-sm uppercase tracking-[0.3em] text-[#A0522D] mb-4 font-medium"
           >
             About Us
           </motion.p>
@@ -59,7 +60,7 @@ export function HeroSection() {
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Crafting Excellence
-            <span className="block text-[#84a98c] italic">Since 1990</span>
+            <span className="block text-[#A0522D] italic">Since 1990</span>
           </motion.h1>
 
           <motion.p
@@ -80,7 +81,7 @@ export function HeroSection() {
           >
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full font-medium transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#A0522D] hover:bg-[#3E2723] text-white rounded-full font-medium transition-colors"
             >
               View Our Products
               <ArrowRight className="h-4 w-4" />

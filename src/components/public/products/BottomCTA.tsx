@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function BottomCTA() {
   return (
-    <section className="py-24 bg-gradient-to-br from-[#52796f] to-[#84a98c] relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-[#3E2723] to-[#A0522D] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div 
           className="absolute inset-0"
@@ -45,7 +45,7 @@ export function BottomCTA() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-white text-[#52796f] hover:bg-[#f1f5f3] px-8 py-3 rounded-full font-medium transition-colors"
+            className="inline-flex items-center justify-center bg-white text-[#C5A059] hover:bg-[#F5F0E8] px-8 py-3 rounded-full font-medium transition-colors"
           >
             Request Custom Quote
           </Link>

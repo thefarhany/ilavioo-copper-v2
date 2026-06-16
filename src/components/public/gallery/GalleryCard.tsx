@@ -43,11 +43,11 @@ export function GalleryCard({ item, index, onClick }: GalleryCardProps) {
           <div className="absolute top-4 right-4">
             {item.type === "video" ? (
               <div className="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-                <Play className="h-5 w-5 text-[#52796f] ml-0.5" />
+                <Play className="h-5 w-5 text-[#C5A059] ml-0.5" />
               </div>
             ) : (
               <div className="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-                <ZoomIn className="h-5 w-5 text-[#52796f]" />
+                <ZoomIn className="h-5 w-5 text-[#C5A059]" />
               </div>
             )}
           </div>
@@ -64,7 +64,7 @@ export function GalleryCard({ item, index, onClick }: GalleryCardProps) {
         </div>
 
         {/* Border on hover */}
-        <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#84a98c]/50 transition-colors duration-500 pointer-events-none" />
+        <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#A0522D]/50 transition-colors duration-500 pointer-events-none" />
       </div>
     </motion.div>
   );

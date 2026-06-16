@@ -176,7 +176,7 @@ export default function EditProductPage() {
   if (isLoading && !product) {
     return (
       <div className="flex items-center justify-center h-64">
-        <div className="w-8 h-8 border-4 border-[#52796f] border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-4 border-[#3E2723] border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -332,7 +332,7 @@ export default function EditProductPage() {
               {/* Upload Area */}
               <div
                 onClick={() => fileInputRef.current?.click()}
-                className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-[#52796f] hover:bg-[#84a98c]/10 transition-colors"
+                className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-[#3E2723] hover:bg-[#A0522D]/10 transition-colors"
               >
                 <Upload className="h-8 w-8 text-gray-400 mx-auto mb-3" />
                 <p className="text-sm text-gray-600">
@@ -363,7 +363,7 @@ export default function EditProductPage() {
                           className="object-cover"
                         />
                         {img.isPrimary && (
-                          <span className="absolute top-1 left-1 bg-[#52796f]/100 text-white text-xs px-2 py-0.5 rounded">
+                          <span className="absolute top-1 left-1 bg-[#3E2723]/100 text-white text-xs px-2 py-0.5 rounded">
                             Primary
                           </span>
                         )}
@@ -420,7 +420,7 @@ export default function EditProductPage() {
           <Button
             type="submit"
             disabled={isUpdating}
-            className="bg-[#52796f] hover:bg-[#3d5c54]"
+            className="bg-[#3E2723] hover:bg-[#2A1B14]"
           >
             {isUpdating ? "Updating..." : "Update Product"}
           </Button>
@@ -456,7 +456,7 @@ export default function EditProductPage() {
               <Button
                 type="submit"
                 disabled={isCreatingCategory}
-                className="bg-[#52796f] hover:bg-[#3d5c54]"
+                className="bg-[#3E2723] hover:bg-[#2A1B14]"
               >
                 {isCreatingCategory ? "Creating..." : "Create Category"}
               </Button>
