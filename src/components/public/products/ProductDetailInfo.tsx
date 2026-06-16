@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { ArrowUpRight, Check, Sparkles, Package, Ruler, Weight, Clock, MapPin, Award, FileText, Shield } from "lucide-react";
+import { Check, Sparkles, Package, Ruler, Weight, Clock, MapPin, Award, FileText, Shield } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { InquiryModal } from "@/components/public/InquiryModal";
 import type { Product } from "@/types";
 
 interface ProductDetailInfoProps {
@@ -12,7 +11,6 @@ interface ProductDetailInfoProps {
 }
 
 export function ProductDetailInfo({ product }: ProductDetailInfoProps) {
-  const [isInquiryOpen, setIsInquiryOpen] = useState(false);
 
   const formatPrice = (price?: number) => {
     if (!price) return "Contact for pricing";
@@ -178,24 +176,23 @@ export function ProductDetailInfo({ product }: ProductDetailInfoProps) {
       {/* CTA */}
       <div className="pt-4 space-y-4">
         <Button
-          onClick={() => setIsInquiryOpen(true)}
+          asChild
           className="w-full h-14 bg-gradient-to-r from-[#84a98c] to-[#52796f] hover:from-[#52796f] hover:to-[#84a98c] text-white text-sm uppercase tracking-wider rounded-xl shadow-lg shadow-[#84a98c]/25"
         >
-          Request Quote
-          <ArrowUpRight className="ml-2 h-4 w-4" />
+          <a
+            href={`https://wa.me/6281213696772?text=Hi%20Ilavioo%2C%20I%20am%20interested%20in%20${encodeURIComponent(product.name)}.%20Can%20you%20send%20me%20a%20quote%3F`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp Now
+            <FaWhatsapp className="ml-2 h-4 w-4" />
+          </a>
         </Button>
 
         <p className="text-xs text-[#78716c] text-center">
           Wholesale pricing available for bulk orders. Minimum order quantity: {product.moq} units.
         </p>
       </div>
-
-      <InquiryModal
-        isOpen={isInquiryOpen}
-        onClose={() => setIsInquiryOpen(false)}
-        productId={product.id}
-        productName={product.name}
-      />
     </div>
   );
 }
