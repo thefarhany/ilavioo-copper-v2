@@ -101,7 +101,7 @@ export function Navbar() {
                 className="bg-[#84a98c] hover:bg-[#52796f] text-white rounded-full px-6 shadow-lg shadow-[#84a98c]/25 transition-all duration-300"
               >
                 <a
-                  href="/catalog.pdf"
+                  href="/catalog-ilavioo-v2.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -144,7 +144,7 @@ export function Navbar() {
               </Link>
             ))}
             <a
-              href="/catalog.pdf"
+              href="/catalog-ilavioo-v2.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
