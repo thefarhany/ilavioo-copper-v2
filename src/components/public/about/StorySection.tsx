@@ -61,7 +61,7 @@ export function StorySection() {
               className="flex items-center gap-2 mt-8 text-[#52796f]"
             >
               <MapPin className="h-4 w-4" />
-              <span className="text-sm">Based in Malang, Indonesia</span>
+              <span className="text-sm">Based in Tumang, Boyolali, Indonesia</span>
             </motion.div>
           </motion.div>
 
