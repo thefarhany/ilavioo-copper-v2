@@ -39,7 +39,7 @@ export default function AdminGalleryPage() {
   const [isUpdating, setIsUpdating] = useState(false);
 
   useEffect(() => {
-    fetchGallery();
+    fetchGallery({ limit: 999 });
   }, [fetchGallery]);
 
   const handleUpload = async () => {
@@ -67,7 +67,7 @@ export default function AdminGalleryPage() {
         setSelectedFiles(null);
         setTitle("");
         setIsUploadDialogOpen(false);
-        fetchGallery();
+        fetchGallery({ limit: 999 });
       } else {
         toast.error("Failed to upload");
       }
@@ -107,7 +107,7 @@ export default function AdminGalleryPage() {
       setEditingItem(null);
       setEditTitle("");
       setIsEditDialogOpen(false);
-      fetchGallery();
+      fetchGallery({ limit: 999 });
     } else {
       toast.error("Failed to update item");
     }

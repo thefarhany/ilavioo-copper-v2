@@ -11,8 +11,8 @@ export function GalleryOverviewSection() {
   const { items, isLoading, fetchGallery } = useGalleryStore();
 
   useEffect(() => {
-    // Fetch first 6 gallery items
-    fetchGallery();
+    // Fetch all gallery items then pick first 6 images
+    fetchGallery({ limit: 999 });
   }, [fetchGallery]);
 
   // Get only image items, max 6

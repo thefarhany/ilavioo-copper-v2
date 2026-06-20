@@ -17,7 +17,7 @@ export default function GalleryPageClient() {
   const [filter, setFilter] = useState<"all" | "image" | "video">("all");
 
   useEffect(() => {
-    fetchGallery();
+    fetchGallery({ limit: 999 });
   }, [fetchGallery]);
 
   const handleItemClick = (item: GalleryItem, index: number) => {
@@ -66,16 +66,17 @@ export default function GalleryPageClient() {
       <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {isLoading ? (
-            <div className={`grid gap-4 ${viewMode === "masonry" ? "columns-2 md:columns-3 lg:columns-4" : "grid-cols-2 md:grid-cols-3 lg:grid-cols-4"}`}>
+            <div className={viewMode === "masonry" ? "columns-2 md:columns-3 lg:columns-4 gap-4" : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"}>
               {[...Array(8)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className={`bg-[#e7e5e4] rounded-2xl animate-pulse ${
-                    viewMode === "masonry" && i % 3 === 0 ? "aspect-[3/4]" : "aspect-square"
-                  }`}
-                />
+                <div key={i} className={viewMode === "masonry" ? "break-inside-avoid mb-4" : ""}>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className={`bg-[#e7e5e4] rounded-2xl animate-pulse ${
+                      viewMode === "masonry" && i % 3 === 0 ? "aspect-[3/4]" : "aspect-square"
+                    }`}
+                  />
+                </div>
               ))}
             </div>
           ) : filteredItems.length === 0 ? (

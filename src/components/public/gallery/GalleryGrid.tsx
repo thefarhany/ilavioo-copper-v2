@@ -9,21 +9,21 @@ interface GalleryGridProps {
 
 export function GalleryGrid({ items, onItemClick, viewMode = "masonry" }: GalleryGridProps) {
   return (
-    <div 
+    <div
       className={
-        viewMode === "masonry" 
-          ? "columns-2 md:columns-3 lg:columns-4 gap-4" 
+        viewMode === "masonry"
+          ? "columns-2 md:columns-3 lg:columns-4 gap-4"
           : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
       }
-      style={{ columnFill: "balance" }}
     >
       {items.map((item, index) => (
-        <GalleryCard
-          key={item.id}
-          item={item}
-          index={index}
-          onClick={() => onItemClick(item, index)}
-        />
+        <div key={item.id} className="break-inside-avoid mb-4">
+          <GalleryCard
+            item={item}
+            index={index}
+            onClick={() => onItemClick(item, index)}
+          />
+        </div>
       ))}
     </div>
   );
