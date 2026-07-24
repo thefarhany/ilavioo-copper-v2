@@ -157,7 +157,7 @@ export function FeaturedSection() {
                         
                         <div className="flex items-center gap-1.5 text-xs text-[#78716c]">
                           <ShoppingBag className="h-3 w-3" />
-                          <span>MOQ: {product.moq || 50}</span>
+                          <span>MOQ: {product.moq ?? "–"}</span>
                         </div>
                       </div>
                     </div>

@@ -46,7 +46,7 @@ export function ValuePropsSection() {
             className="text-3xl md:text-4xl text-[#1c1917]"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            The <span className="text-[#C5A059] italic">Ilavio</span> Difference
+            The <span className="text-[#C5A059] italic">Ilavioo</span> Difference
           </h2>
         </motion.div>
 

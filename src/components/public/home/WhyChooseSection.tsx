@@ -61,7 +61,7 @@ export function WhyChooseSection() {
             transition={{ delay: 0.1 }}
           >
             <p className="text-sm uppercase tracking-[0.2em] text-[#A0522D] mb-3 font-medium">
-              Why Ilavio
+              Why Ilavioo
             </p>
             <h2
               className="text-3xl md:text-4xl text-[#1c1917] mb-6"
